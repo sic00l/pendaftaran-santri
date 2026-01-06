@@ -1,0 +1,278 @@
+/* ============================================
+   Table Components
+   ============================================ */
+
+/* Table Container */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Base Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--color-bg-white);
+}
+
+.table thead {
+    background: var(--color-bg-gray);
+    border-bottom: 2px solid var(--color-border-dark);
+}
+
+.table th {
+    padding: var(--space-4) var(--space-6);
+    text-align: left;
+    font-size: var(--text-sm);
+    font-weight: var(--font-semibold);
+    color: var(--color-text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+}
+
+.table th.sortable {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    padding-right: var(--space-8);
+}
+
+.table th.sortable::after {
+    content: "⇅";
+    position: absolute;
+    right: var(--space-4);
+    opacity: 0.3;
+}
+
+.table th.sortable.asc::after {
+    content: "↑";
+    opacity: 1;
+}
+
+.table th.sortable.desc::after {
+    content: "↓";
+    opacity: 1;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid var(--color-border);
+    transition: background-color var(--transition-fast);
+}
+
+.table tbody tr:hover {
+    background: var(--color-bg-light);
+}
+
+.table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.table td {
+    padding: var(--space-4) var(--space-6);
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+}
+
+/* Striped Table */
+.table-striped tbody tr:nth-child(odd) {
+    background: var(--color-bg-light);
+}
+
+/* Bordered Table */
+.table-bordered {
+    border: 1px solid var(--color-border);
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid var(--color-border);
+}
+
+/* Compact Table */
+.table-compact th,
+.table-compact td {
+    padding: var(--space-2) var(--space-4);
+}
+
+/* Table Actions */
+.table-actions {
+    display: flex;
+    gap: var(--space-2);
+    justify-content: flex-end;
+}
+
+.table-action-btn {
+    width: 2rem;
+    height: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    color: var(--color-text-muted);
+    transition: all var(--transition-fast);
+}
+
+.table-action-btn:hover {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #ffffff;
+}
+
+.table-action-btn.danger:hover {
+    background: var(--color-error);
+    border-color: var(--color-error);
+}
+
+/* Table Pagination */
+.table-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-4) var(--space-6);
+    background: var(--color-bg-white);
+    border-top: 1px solid var(--color-border);
+}
+
+.table-pagination-info {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+}
+
+.table-pagination-buttons {
+    display: flex;
+    gap: var(--space-2);
+}
+
+.table-pagination-btn {
+    width: 2rem;
+    height: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-bg-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: var(--text-sm);
+    transition: all var(--transition-fast);
+}
+
+.table-pagination-btn:hover {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #ffffff;
+}
+
+.table-pagination-btn.active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #ffffff;
+}
+
+.table-pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Table Empty State */
+.table-empty {
+    padding: var(--space-12) var(--space-6);
+    text-align: center;
+    color: var(--color-text-muted);
+}
+
+.table-empty-icon {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto var(--space-4);
+    opacity: 0.3;
+}
+
+/* Table Loading */
+.table-loading {
+    position: relative;
+    min-height: 200px;
+}
+
+.table-loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+/* Status Badge in Table */
+.table .badge {
+    font-size: var(--text-xs);
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    .table-responsive {
+        display: block;
+    }
+
+    .table-responsive thead {
+        display: none;
+    }
+
+    .table-responsive tbody,
+    .table-responsive tr,
+    .table-responsive td {
+        display: block;
+    }
+
+    .table-responsive tr {
+        margin-bottom: var(--space-4);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-sm);
+        padding: var(--space-4);
+    }
+
+    .table-responsive td {
+        padding: var(--space-2) 0;
+        border: none;
+        position: relative;
+        padding-left: 40%;
+    }
+
+    .table-responsive td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 35%;
+        font-weight: var(--font-semibold);
+        color: var(--color-text-primary);
+    }
+}
+
+/* DataTables Custom Styling */
+.dataTables_wrapper {
+    padding: var(--space-4);
+}
+
+.dataTables_filter input {
+    padding: var(--space-2) var(--space-4);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    margin-left: var(--space-2);
+}
+
+.dataTables_length select {
+    padding: var(--space-2) var(--space-4);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    margin: 0 var(--space-2);
+}

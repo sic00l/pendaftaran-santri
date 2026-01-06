@@ -1,0 +1,154 @@
+/* ============================================
+   Main Application Stylesheet
+   Imports all component stylesheets
+   ============================================ */
+
+/* Base Styles */
+@import './base/variables.css';
+@import './base/reset.css';
+@import './base/typography.css';
+
+/* Component Styles */
+@import './components/buttons.css';
+@import './components/forms.css';
+@import './components/cards.css';
+@import './components/alerts.css';
+@import './components/modals.css';
+@import './components/tables.css';
+
+/* Layout Styles */
+@import './layouts/navbar.css';
+@import './layouts/sidebar.css';
+@import './layouts/footer.css';
+
+/* Page Styles */
+@import './pages/landing.css';
+@import './pages/registration.css';
+@import './pages/dashboard.css';
+@import './pages/admin.css';
+
+/* Utility Classes */
+@import './utilities.css';
+
+/* ============================================
+   Global Styles
+   ============================================ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-bg-light);
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: var(--container-sm);
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: var(--container-md);
+        padding-left: var(--space-6);
+        padding-right: var(--space-6);
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: var(--container-lg);
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: var(--container-xl);
+    }
+}
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: var(--container-2xl);
+    }
+}
+
+/* Full Width Container */
+.container-fluid {
+    width: 100%;
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+}
+
+/* Main Content */
+main {
+    min-height: calc(100vh - 200px);
+}
+
+/* Section Spacing */
+.section {
+    padding: var(--space-16) 0;
+}
+
+.section-sm {
+    padding: var(--space-12) 0;
+}
+
+.section-lg {
+    padding: var(--space-24) 0;
+}
+
+/* Accessibility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Focus Visible */
+*:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+    background-color: var(--color-primary);
+    color: #ffffff;
+}
+
+/* Scrollbar Styling (for webkit browsers) */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg-gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-border-dark);
+    border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-text-muted);
+}
