@@ -11,40 +11,48 @@
     </div>
 </section>
 
-<!-- Caretaker Section -->
-<section class="section">
+<!-- Caretaker Section (Refined Elegant Design) -->
+<section class="section" style="background: #ffffff; padding: 100px 0;">
     <div class="container">
-        <div class="card card-about" style="overflow: hidden; border: none; box-shadow: var(--shadow-xl);">
-            <div style="display: grid; grid-template-columns: 1fr; @media (min-width: 768px) { grid-template-columns: 400px 1fr; }">
-                <div style="background-color: var(--color-bg-gray); display: flex; align-items: center; justify-content: center; padding: var(--space-8);">
-                    <div style="text-align: center;">
-                        <div style="width: 200px; height: 200px; border-radius: var(--radius-full); overflow: hidden; margin: 0 auto var(--space-6); box-shadow: 0 10px 30px rgba(0,0,0,0.15); border: 5px solid #ffffff; position: relative;">
-                            <!-- 'Korean Studio' Style: Bright exposure, soft contrast, warm glow -->
-                            <img src="/img/pengasuh.jpg" alt="KH. Sikul Amal" style="width: 100%; height: 100%; object-fit: cover; object-position: center; filter: brightness(1.15) contrast(0.9) saturate(1.1) blur(0.2px);">
-                            <!-- Glassmorphism Highlight -->
-                            <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,0.3) 0%, transparent 50%); pointer-events: none;"></div>
-                        </div>
-                        <h3 class="text-2xl font-bold color-primary" style="font-family: 'Poppins', sans-serif;">KH. Sikul Amal, M.Pd.</h3>
-                        <p class="text-muted" style="letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem; font-weight: 700;">Pengasuh Pesantren Al-Kautsar</p>
-                    </div>
+        <div style="display: grid; grid-template-columns: 1fr; @media (min-width: 992px) { grid-template-columns: 450px 1fr; } gap: 60px; align-items: center;">
+            
+            <!-- Photo Side (Circular) -->
+            <div style="display: flex; justify-content: center; position: relative;">
+                <div style="width: 380px; height: 380px; border-radius: 50%; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15); border: 12px solid #ffffff; position: relative; z-index: 2;">
+                    <img src="/img/pengasuh.jpg" alt="KH. Sikul Amal" style="width: 100%; height: 100%; object-fit: cover; object-position: center 20%; filter: brightness(1.05) contrast(1.02);">
+                    <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.2) 0%, transparent 30%);"></div>
                 </div>
-                <div style="padding: var(--space-10);">
-                    <h2 class="section-title" style="text-align: left; margin-bottom: var(--space-6);">Profil Pengasuh</h2>
-                    <p class="text-lg leading-relaxed mb-6">
-                        <strong>Ustadz Sikul Amal</strong> adalah tokoh pendidik yang telah mendedikasikan hidupnya untuk kemajuan pendidikan Islam di Indonesia. Sebagai alumni Universitas Al-Azhar, Kairo, beliau membawa metodologi pembelajaran yang memadukan nilai-nilai tradisional pesantren dengan efisiensi pendidikan modern.
+                <!-- Subtle Decorative Ring -->
+                <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); width: 410px; height: 410px; border: 2px solid var(--color-primary); border-radius: 50%; opacity: 0.1; z-index: 1;"></div>
+            </div>
+
+            <!-- Content Side -->
+            <div>
+                <div style="display: inline-block; padding: 6px 16px; background: var(--color-bg-light); color: var(--color-primary); border-radius: 99px; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 24px;">
+                    Profil Pengasuh
+                </div>
+                <h1 style="font-family: 'Poppins', sans-serif; font-size: 3rem; font-weight: 800; color: #1e293b; margin-bottom: 8px; line-height: 1.2;">
+                    KH. Sikul Amal, <span style="color: var(--color-primary);">M.Pd.</span>
+                </h1>
+                <p style="font-size: 1.2rem; color: #64748b; font-weight: 500; margin-bottom: 35px; border-left: 4px solid var(--color-accent); padding-left: 15px;">Pengasuh Pesantren Al-Kautsar</p>
+                
+                <div style="font-size: 1.15rem; line-height: 1.8; color: #475569; margin-bottom: 40px;">
+                    <p style="margin-bottom: 20px;">
+                        <strong>KH. Sikul Amal</strong> memimpin Pesantren Al-Kautsar dengan dedikasi tinggi, menggabungkan kearifan lokal dengan pandangan global untuk menciptakan lingkungan pendidikan yang islami dan progresif.
                     </p>
-                    <p class="text-lg leading-relaxed mb-6">
-                        Beliau percaya bahwa setiap santri memiliki potensi unik yang harus diasah dengan kesabaran dan kasih sayang. Di bawah bimbingan beliau, Pesantren Al-Kautsar terus berkembang menjadi institusi yang disegani karena kedisiplinan dan kualitas lulusannya.
+                    <p>
+                        Beliau menekankan pentingnya pembentukan karakter (akhlak) di samping keunggulan akademik, memastikan setiap santri siap menghadapi tantangan zaman dengan pondasi iman yang kokoh.
                     </p>
-                    <div style="display: flex; gap: var(--space-4);">
-                        <div style="text-align: center; padding: var(--space-4); background: var(--color-bg-light); border-radius: var(--radius-lg); flex: 1;">
-                            <div class="font-bold text-xl color-primary">20+</div>
-                            <div class="text-sm">Tahun Pengalaman</div>
-                        </div>
-                        <div style="text-align: center; padding: var(--space-4); background: var(--color-bg-light); border-radius: var(--radius-lg); flex: 1;">
-                            <div class="font-bold text-xl color-primary">Al-Azhar</div>
-                            <div class="text-sm">Lulusan Terbaik</div>
-                        </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                    <div style="padding: 20px; background: #f8fafc; border-radius: 20px; border: 1px solid #e2e8f0;">
+                        <h4 style="font-weight: 700; color: #1e293b; margin-bottom: 5px;">Amanah & Bijak</h4>
+                        <p style="font-size: 0.9rem; color: #64748b;">Memimpin dengan ketulusan dan integritas tinggi.</p>
+                    </div>
+                    <div style="padding: 20px; background: #f8fafc; border-radius: 20px; border: 1px solid #e2e8f0;">
+                        <h4 style="font-weight: 700; color: #1e293b; margin-bottom: 5px;">Visi Modern</h4>
+                        <p style="font-size: 0.9rem; color: #64748b;">Menerapkan sistem pendidikan yang adaptif dan relevan.</p>
                     </div>
                 </div>
             </div>
@@ -97,7 +105,7 @@
     </div>
 </section>
 
-<!-- History Section if needed -->
+<!-- History Section -->
 <section class="section" style="background-color: var(--color-bg-light);">
     <div class="container">
         <div class="text-center max-w-3xl mx-auto">
@@ -124,4 +132,3 @@
     </div>
 </section>
 @endsection
-
