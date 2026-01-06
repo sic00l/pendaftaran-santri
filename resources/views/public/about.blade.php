@@ -18,14 +18,14 @@
             <div style="display: grid; grid-template-columns: 1fr; @media (min-width: 768px) { grid-template-columns: 400px 1fr; }">
                 <div style="background-color: var(--color-bg-gray); display: flex; align-items: center; justify-content: center; padding: var(--space-8);">
                     <div style="text-align: center;">
-                        <div style="width: 200px; height: 200px; border-radius: var(--radius-full); overflow: hidden; margin: 0 auto var(--space-6); box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3); border: 4px solid #ffffff; position: relative;">
-                            <!-- 'Korean Oppa' Filter: Brightness bump, slight saturation, soft contrast -->
-                            <img src="/img/ustadz-sikul.jpg" alt="Ustadz Sikul Amal" style="width: 100%; height: 100%; object-fit: cover; object-position: top; filter: brightness(1.1) contrast(0.95) saturate(1.1);">
-                            <!-- Soft Glow Overlay -->
-                            <div style="position: absolute; inset: 0; background: linear-gradient(to bottom right, rgba(255,255,255,0.2), transparent); pointer-events: none;"></div>
+                        <div style="width: 200px; height: 200px; border-radius: var(--radius-full); overflow: hidden; margin: 0 auto var(--space-6); box-shadow: 0 10px 30px rgba(0,0,0,0.15); border: 5px solid #ffffff; position: relative;">
+                            <!-- 'Korean Studio' Style: Bright exposure, soft contrast, warm glow -->
+                            <img src="/img/pengasuh.jpg" alt="KH. Sikul Amal" style="width: 100%; height: 100%; object-fit: cover; object-position: center; filter: brightness(1.15) contrast(0.9) saturate(1.1) blur(0.2px);">
+                            <!-- Glassmorphism Highlight -->
+                            <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,0.3) 0%, transparent 50%); pointer-events: none;"></div>
                         </div>
-                        <h3 class="text-2xl font-bold color-primary">Ustadz Sikul Amal</h3>
-                        <p class="text-muted">Pengasuh Utama</p>
+                        <h3 class="text-2xl font-bold color-primary" style="font-family: 'Poppins', sans-serif;">KH. Sikul Amal, M.Pd.</h3>
+                        <p class="text-muted" style="letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem; font-weight: 700;">Pengasuh Pesantren Al-Kautsar</p>
                     </div>
                 </div>
                 <div style="padding: var(--space-10);">
