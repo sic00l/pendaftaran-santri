@@ -11,42 +11,47 @@
     </div>
 </section>
 
-<!-- Caretaker Section (Back to Original Card Style with Ornament) -->
-<section class="section">
+<!-- Caretaker Section (Styled to match Requirements Page) -->
+<section class="section" style="background-color: #ffffff;">
     <div class="container">
-        <div class="card card-about" style="overflow: hidden; border: none; box-shadow: var(--shadow-xl); border-radius: 20px;">
-            <div style="display: grid; grid-template-columns: 1fr; @media (min-width: 768px) { grid-template-columns: 350px 1fr; }">
-                <div style="background-color: var(--color-primary); display: flex; align-items: center; justify-content: center; padding: var(--space-12); color: white; position: relative; overflow: hidden;">
-                    <!-- Geometric Background Ornament -->
-                    <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
-                    
-                    <div style="text-align: center; position: relative; z-index: 2;">
-                        <div style="width: 180px; height: 180px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-6); border: 2px dashed rgba(255,255,255,0.5);">
-                            <!-- Person Ornament (Icon) -->
-                            <i class="fas fa-user-tie" style="font-size: 80px; color: white;"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold" style="margin-bottom: 5px;">KH. Sikul Amal, M.Pd.</h3>
-                        <p style="opacity: 0.8; font-size: 0.9rem; letter-spacing: 1px;">PENGASUH PESANTREN</p>
-                    </div>
+        <div class="card overflow-hidden" style="border: none; box-shadow: var(--shadow-lg); border-radius: var(--radius-lg); display: grid; grid-template-columns: 1fr; @media (min-width: 768px) { grid-template-columns: 350px 1fr; }">
+            
+            <!-- Left Side (Ornament & Identity) -->
+            <div style="background-color: var(--color-primary); color: white; padding: var(--space-12); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; position: relative;">
+                <!-- Subtle Background Texture (matching requirements style) -->
+                <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 100%); pointer-events: none;"></div>
+                
+                <div style="width: 160px; height: 160px; background: rgba(255,255,255,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-6); border: 2px solid rgba(255,255,255,0.3); position: relative; z-index: 2;">
+                    <i class="fas fa-user-tie" style="font-size: 70px;"></i>
                 </div>
-                <div style="padding: var(--space-10); background: white;">
-                    <h2 class="section-title" style="text-align: left; margin-bottom: var(--space-6); color: var(--color-primary);">Profil Pengasuh</h2>
-                    <div style="font-size: 1.1rem; line-height: 1.8; color: var(--color-secondary);">
-                        <p style="margin-bottom: var(--space-6);">
-                            <strong>KH. Sikul Amal, M.Pd.</strong> adalah sosok pendidik yang berdedikasi tinggi dalam membimbing santri dengan kasih sayang dan ketegasan. Beliau memadukan kurikulum pesantren salaf dengan sistem pendidikan modern yang relevan dengan tantangan zaman.
-                        </p>
-                        <p style="margin-bottom: var(--space-6);">
-                            Di bawah kepemimpinan beliau, Pesantren Al-Kautsar mengedepankan pembentukan karakter islami yang kuat, kemandirian, serta penguasaan ilmu pengetahuan sebagai bekal santri untuk masa depan yang gemilang.
-                        </p>
-                    </div>
-                    <div style="display: flex; gap: var(--space-4); margin-top: var(--space-8);">
-                        <div style="padding: var(--space-4); background: var(--color-bg-light); border-radius: var(--radius-lg); flex: 1; text-align: center;">
-                            <div class="font-bold text-xl color-primary">20+</div>
-                            <div class="text-sm">Tahun Dedikasi</div>
+                
+                <h3 class="text-xl font-bold" style="margin-bottom: 5px; color: white; font-family: 'Inter', sans-serif;">KH. Sikul Amal, M.Pd.</h3>
+                <p class="text-sm" style="opacity: 0.9; text-transform: uppercase; letter-spacing: 1px; font-weight: 500;">Pengasuh Pesantren</p>
+            </div>
+
+            <!-- Right Side (Biography Text) -->
+            <div style="padding: var(--space-10); background: white;">
+                <h2 class="text-xl font-bold color-primary" style="margin-bottom: var(--space-6); display: flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-id-card"></i> Profil Pengasuh
+                </h2>
+                
+                <div style="font-family: 'Inter', sans-serif; color: var(--color-secondary); line-height: 1.8;">
+                    <p style="margin-bottom: var(--space-6); font-size: 1rem;">
+                        <strong>KH. Sikul Amal, M.Pd.</strong> adalah sosok pendidik yang berdedikasi tinggi dalam membimbing santri dengan kasih sayang dan ketegasan. Beliau memadukan kurikulum pesantren salaf dengan sistem pendidikan modern yang relevan dengan tantangan zaman.
+                    </p>
+                    
+                    <p style="margin-bottom: var(--space-8); font-size: 1rem;">
+                        Di bawah kepemimpinan beliau, Pesantren Al-Kautsar mengedepankan pembentukan karakter islami yang kuat, kemandirian, serta penguasaan ilmu pengetahuan sebagai bekal santri untuk masa depan yang gemilang.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div style="padding: var(--space-4); border: 1px solid var(--color-bg-light); border-bottom: 3px solid var(--color-primary); border-radius: var(--radius-md);">
+                            <div class="font-bold text-lg color-primary">20+ Tahun</div>
+                            <div class="text-xs text-muted font-medium">Dedikasi Pendidikan</div>
                         </div>
-                        <div style="padding: var(--space-4); background: var(--color-bg-light); border-radius: var(--radius-lg); flex: 1; text-align: center;">
-                            <div class="font-bold text-xl color-primary">Alumni</div>
-                            <div class="text-sm">Terbaik Al-Azhar</div>
+                        <div style="padding: var(--space-4); border: 1px solid var(--color-bg-light); border-bottom: 3px solid var(--color-accent); border-radius: var(--radius-md);">
+                            <div class="font-bold text-lg color-accent">Al-Azhar</div>
+                            <div class="text-xs text-muted font-medium">Lulusan Terbaik</div>
                         </div>
                     </div>
                 </div>
@@ -100,28 +105,26 @@
     </div>
 </section>
 
-<!-- History Section -->
+<!-- Value Section -->
 <section class="section" style="background-color: var(--color-bg-light);">
-    <div class="container">
-        <div class="text-center max-w-3xl mx-auto">
-            <h2 class="section-title">Nilai-Nilai Kami</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-                <div>
-                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🤝</div>
-                    <h4 class="font-bold">Amanah</h4>
-                </div>
-                <div>
-                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎓</div>
-                    <h4 class="font-bold">Cerdas</h4>
-                </div>
-                <div>
-                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🛡️</div>
-                    <h4 class="font-bold">Disiplin</h4>
-                </div>
-                <div>
-                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">✨</div>
-                    <h4 class="font-bold">Ikhlas</h4>
-                </div>
+    <div class="container text-center">
+        <h2 class="section-title">Nilai-Nilai Kami</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+            <div class="card p-6">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🤝</div>
+                <h4 class="font-bold">Amanah</h4>
+            </div>
+            <div class="card p-6">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎓</div>
+                <h4 class="font-bold">Cerdas</h4>
+            </div>
+            <div class="card p-6">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🛡️</div>
+                <h4 class="font-bold">Disiplin</h4>
+            </div>
+            <div class="card p-6">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">✨</div>
+                <h4 class="font-bold">Ikhlas</h4>
             </div>
         </div>
     </div>
